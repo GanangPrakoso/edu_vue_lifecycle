@@ -1,0 +1,46 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "name": "Belajar Vue",
+      "description": "Belajar Vue magic",
+      "priority": "Critical"
+    },
+    {
+      "id": 2,
+      "name": "Belajar Tailwind",
+      "description": "Belajar Tailwind dari situs Vuenya langsung",
+      "priority": "Low"
+    },
+    {
+      "id": 3,
+      "name": "Buat Aplikasi ToDo",
+      "description": "Buat aplikasi ToDo sederhana dengan memanfaatkan Vue dan Tailwind",
+      "priority": "Highest"
+    },
+    {
+      "id": 4,
+      "name": "Belajar Lifecycle",
+      "description": "Lifecycle milik Vue.js",
+      "priority": "Critical"
+    },
+    {
+      "name": "lalala ini contoh",
+      "description": "contoh doang",
+      "priority": "Low",
+      "id": 5
+    },
+    {
+      "name": "bikin video berapa harga outfit lo",
+      "description": "ini ga penting",
+      "priority": "Low",
+      "id": 6
+    },
+    {
+      "name": "1",
+      "description": "2",
+      "priority": "Low",
+      "id": 7
+    }
+  ]
+}
