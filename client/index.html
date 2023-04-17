@@ -48,7 +48,7 @@
       <!-- Login Form -->
       <section
         id="loginpage"
-        v-if="!isLogin"
+        v-if="page ==='login'"
         class="w-full px-8 py-16 bg-gray-100 xl:px-8"
       >
         <div class="max-w-5xl mx-auto">
@@ -89,7 +89,7 @@
         </div>
       </section>
 
-      <div id="mainpage" v-else>
+      <div id="mainpage" v-if="page === 'home'">
         <!-- Add To Do Form -->
         <section class="w-full px-8 py-16 bg-gray-100 xl:px-8">
           <form>
