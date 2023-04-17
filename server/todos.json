@@ -23,24 +23,6 @@
       "name": "Belajar Lifecycle",
       "description": "Lifecycle milik Vue.js",
       "priority": "Critical"
-    },
-    {
-      "name": "lalala ini contoh",
-      "description": "contoh doang",
-      "priority": "Low",
-      "id": 5
-    },
-    {
-      "name": "bikin video berapa harga outfit lo",
-      "description": "ini ga penting",
-      "priority": "Low",
-      "id": 6
-    },
-    {
-      "name": "1",
-      "description": "2",
-      "priority": "Low",
-      "id": 7
     }
   ]
 }
