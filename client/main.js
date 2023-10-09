@@ -18,4 +18,8 @@ createApp({
       todos: [],
     };
   },
+
+  methods: {
+    //
+  },
 }).mount("#app");
