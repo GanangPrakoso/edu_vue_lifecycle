@@ -23,6 +23,36 @@
       "name": "Belajar Lifecycle",
       "description": "Lifecycle milik Vue.js",
       "priority": "Critical"
+    },
+    {
+      "name": "apa ini bang messi",
+      "description": "Belajar Vue magic v2",
+      "priority": "Low",
+      "id": 5
+    },
+    {
+      "name": "ngopi",
+      "description": "sianidass",
+      "priority": "Highest",
+      "id": 6
+    },
+    {
+      "name": "ngopi 2",
+      "description": "ga pake kembung",
+      "priority": "Critical",
+      "id": 7
+    },
+    {
+      "name": "cicak cicak di dinding",
+      "description": "diam diam merayap",
+      "priority": "Critical",
+      "id": 8
+    },
+    {
+      "name": "sadf",
+      "description": "asdf",
+      "priority": "Highest",
+      "id": 9
     }
   ]
 }

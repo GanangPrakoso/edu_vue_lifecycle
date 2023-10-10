@@ -26,6 +26,8 @@
             class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none"
             >ToDo VueJS
           </a>
+
+          <span>{{tambahinMr}}</span>
         </div>
       </nav>
 
@@ -39,6 +41,7 @@
           <div class="flex flex-col items-center md:flex-row">
             <div class="w-full mt-16 md:mt-0 md:w-5/5">
               <form
+                @submit.prevent="handleLogin"
                 class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7"
               >
                 <img
@@ -76,7 +79,7 @@
       <div id="mainpage" v-if="page === 'home'">
         <!-- Add To Do Form -->
         <section class="w-full px-8 py-16 bg-gray-100 xl:px-8">
-          <form>
+          <form @submit.prevent="submitHandler">
             <div class="max-w-5xl mx-auto">
               <div class="flex flex-col items-center md:flex-row">
                 <div class="w-full mt-16 md:mt-0 md:w-5/5">
@@ -102,6 +105,7 @@
                     />
 
                     <select
+                      @change="console.log('ini berubah')"
                       v-model="newTodo.priority"
                       name="todo-priority"
                       class="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none"
@@ -125,6 +129,21 @@
               </div>
             </div>
           </form>
+
+          <ul>
+            <span>COMPUTED</span>
+            <li>{{computedMathRandom}}</li>
+            <li>{{computedMathRandom}}</li>
+            <li>{{computedMathRandom}}</li>
+            <li>{{computedMathRandom}}</li>
+
+            <br />
+            <span>METHOD</span>
+            <li>{{methodMathRandom()}}</li>
+            <li>{{methodMathRandom()}}</li>
+            <li>{{methodMathRandom()}}</li>
+            <li>{{methodMathRandom()}}</li>
+          </ul>
         </section>
 
         <!-- To Do List -->
@@ -208,7 +227,7 @@
             <div v-else>
               <!-- CARD -->
               <div
-                v-for="todo in todos"
+                v-for="todo in filteredTodos"
                 :key="todo.id"
                 class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3"
               >
@@ -274,6 +293,7 @@
     </div>
 
     <!-- Script section -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="./main.js"></script>
   </body>
